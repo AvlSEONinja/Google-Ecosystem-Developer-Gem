@@ -1,0 +1,24 @@
+.
+├── .github/
+│   └── workflows/
+│       └── deploy-clasp.yml       # Optional: Automated Apps Script pushing
+├── boilerplates/
+│   ├── chrome-extension-mv3/
+│   │   ├── manifest.json          # Extension configuration (MV3 mandatory)
+│   │   ├── background.js          # Transient Service Worker script
+│   │   ├── popup.html             # UI window container
+│   │   └── popup.js               # UI logic script
+│   ├── apps-script-standalone/
+│   │   ├── appsscript.json        # Apps Script Manifest (V8 engine config)
+│   │   └── Code.js                # Core script entrypoint
+│   └── sheets-addon/
+│       ├── appsscript.json        # Manifest detailing custom Add-on UI bindings
+│       ├── Code.js                # OnOpen UI hooks and calculations
+│       └── Sidebar.html           # HTML UI presentation layer
+├── modules/
+│   ├── auth-oauth2.js             # Reusable GCP service account/OAuth token logic
+│   ├── rate-limiter.js            # Batch handler & exponential backoff engine
+│   └── logger.js                  # Standardized stackdriver logger wrapper
+├── project-logs/
+│   └── README.md                  # Ledger tracking variations and states
+└── README.md                      # Global workspace manifest (Created previously)
